@@ -14,10 +14,12 @@
     <link href="styles/desktop.css" rel="stylesheet" type="text/css" >
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
   </head>
   <body>
+  <div class="siteWrapper">
     <nav>
       <ul>
         <li>
@@ -76,22 +78,24 @@
 
       </section>
 
-      <section>
-        <button id="leftButton" type="button" name="button" style="position:relative; z-index: 999;">Move Left</button>
-        <button id="rightButton" type="button" name="button" style="position:relative; z-index: 999;">Move Right</button>
+      <section id="buttons">
+        <div id="leftButton" type="button" name="button"></div>
+        <div id="rightButton" type="button" name="button"></div>
       </section>
 
       <section id="walker">
-        <article class="redButton">
+        <img src="img/car2.png" alt="car" />
 
-        </article>
       </section>
 
     </main>
     <footer>
-      <img src="" alt="Fusion Logo" />
+      <!-- <img src="" alt="Fusion Logo" /> -->
     </footer>
 
     <script type="text/javascript" src="scripts/script.js"></script>
+
+  </div>
   </body>
+
 </html>

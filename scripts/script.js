@@ -1,7 +1,3 @@
-// $('.redButton').click(function(){
-//   $('#b2b').animate({left: '-=150px'});
-// })
-
 var rightButton = $('#rightButton');
 var leftButton = $('#leftButton');
 
@@ -22,5 +18,8 @@ function stopScrolling()
     $('#b2b').stop();
 }
 
-rightButton.mousedown(scrollRight).mouseup(stopScrolling);
-leftButton.mousedown(scrollLeft).mouseup(stopScrolling);
+rightButton.on("vmousedown", scrollRight).on("vmouseup", stopScrolling);
+leftButton.on("vmousedown", scrollLeft).on("vmouseup", stopScrolling);
+
+// Scroll Lock
+$('html').on("touchmove", false);

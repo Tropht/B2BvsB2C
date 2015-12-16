@@ -2,16 +2,20 @@
   ::-webkit-scrollbar {
     display: none; }
 
-  body {
+  .siteWrapper {
+    overflow-x: hidden; }
+
+  html, body {
     font-family: 'Questrial', sans-serif;
-    overflow-y: hidden;
     height: 100%; }
 
+  .ui-loader {
+    display: none; }
+
   nav {
-    height: 25px;
+    height: 50px;
     width: 100%;
-    background-color: black;
-    position: fixed; }
+    background-color: black; }
     nav li {
       color: white;
       display: inline; }
@@ -23,7 +27,7 @@
 
   #b2b {
     width: 10000px;
-    height: 250px;
+    height: 75%;
     position: relative;
     top: 25px; }
     #b2b article {
@@ -42,20 +46,36 @@
   #walker {
     background-color: #FDF4E1;
     position: absolute;
-    top: 250px;
+    top: 75%;
     bottom: 0;
     width: 100%; }
-    #walker article {
-      height: 20px;
-      width: 20px;
-      margin: auto;
-      background-color: red; }
+    #walker img {
+      width: 30%;
+      margin-left: 30%; }
+
+  #leftButton {
+    height: 150px;
+    width: 10%;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    left: 0px; }
+
+  #rightButton {
+    height: 150px;
+    width: 10%;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    right: 0px; }
 
   footer {
-    height: 25px;
+    height: 20px;
     width: 100%;
     position: absolute;
-    bottom: 0px;
+    bottom: -20px;
     background-color: black; } }
 
 /*# sourceMappingURL=phone.css.map */
